@@ -12,6 +12,3 @@ stages {
       sh 'npm start'
     }
   }
- }
-}
-
