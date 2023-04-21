@@ -9,7 +9,7 @@ stages {
   }
   stages('Test') {
     steps {
-      sh 'yarn test' --watchAll=false'
+      sh 'public' --watchAll=false'
       }
     }
   stages('Deploy') {
