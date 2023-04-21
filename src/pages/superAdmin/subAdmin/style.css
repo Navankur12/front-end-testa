@@ -1,0 +1,46 @@
+.admin-dashboard .main-content {
+  background: #f7f8fb;
+  border-radius: 16px;
+  margin: 18px 0;
+  width: calc(80.5% - 26px);
+  padding: 40px 35px 60px 35px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.admin-dashboard .main-content::-webkit-scrollbar {
+  display: none;
+}
+
+.admin-dashboard .main-content .title h1 {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+  color: #231f20;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard .main-content .title {
+  margin-bottom: 39px;
+  display: flex;
+  justify-content: space-between;
+}
+.admin-dashboard .main-content .title button {
+  display: flex;
+  gap: 12px;
+  padding: 15px 20px;
+  background: #00b2ff;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: none;
+  color: #FDFDFD;
+}
+
+.admin-dashboard .main-content .title p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}

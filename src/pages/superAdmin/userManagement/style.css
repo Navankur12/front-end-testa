@@ -1,0 +1,99 @@
+.admin-dashboard .main-content {
+  background: #f7f8fb;
+  border-radius: 16px;
+  margin: 18px 0;
+  width: calc(80.5% - 26px);
+  padding: 40px 35px 60px 35px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.admin-dashboard .main-content::-webkit-scrollbar {
+  display: none;
+}
+
+.admin-dashboard .main-content .title h1 {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+  color: #231f20;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard .main-content .title {
+  margin-bottom: 39px;
+  display: flex;
+  justify-content: space-between;
+}
+.admin-dashboard .main-content .title button {
+  display: flex;
+  gap: 12px;
+  padding: 15px 20px;
+  background: #00b2ff;
+  border-radius: 5px;
+  margin-top: 15px;
+  border: none;
+  color: #fdfdfd;
+}
+
+.admin-dashboard .main-content .title p {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.accept_or_reject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.permission .approved{
+  border: 2px solid #12c473;
+  transition: 0.5s;
+}
+.permission .decline{
+  border: 2px solid #ef0b0b;
+  transition: 0.5s;
+}
+.accept_or_reject.disabled{
+  opacity: 0.5;
+  cursor: auto;
+}
+.permission .approved:not(.disabled):hover path{
+  fill: #12c473;
+  stroke: #12c473;
+}
+.permission .approved:not(.disabled):hover{
+  border: 2px solid #12c473;
+  background-color: transparent;
+  color: #12c473;
+  /* font-weight: 700; */
+}
+.permission .decline:not(.disabled):hover path{
+  fill: #ef0b0b;
+  stroke: #ef0b0b;
+}
+.permission .decline:not(.disabled):hover{
+  border: 2px solid #ef0b0b;
+  background-color: transparent;
+  color: #ef0b0b;
+  /* font-weight: 700; */
+}
+.subadmin-table td.user-status{
+  font-weight: 600;
+  font-style: italic;
+}
+.subadmin-table td.user-status.pending{
+  color: #ff8900;
+}
+.subadmin-table td.user-status.rejected{
+  color: #ef0b0b;
+}
+.subadmin-table td.user-status.accepted{
+  color: #12c473;
+}

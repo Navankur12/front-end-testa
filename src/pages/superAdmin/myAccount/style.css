@@ -1,0 +1,77 @@
+.admin-dashboard .main-content {
+  background: #f7f8fb;
+  border-radius: 16px;
+  margin: 18px 0;
+  width: calc(80.5% - 26px);
+  padding: 40px 35px 60px 35px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.admin-dashboard .main-content::-webkit-scrollbar {
+  display: none;
+}
+
+.admin-dashboard .main-content .title h1 {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+  color: #231f20;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard .main-content .title {
+  margin-bottom: 39px;
+}
+
+.admin-dashboard .main-content .title p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.my-account-wrapper {
+  background: #fdfdfd;
+  border-radius: 10px;
+}
+.my-account-wrapper .tabs-wrapper {
+  display: flex;
+  gap: 30px;
+  padding: 20px 0 0 40px;
+  border-bottom: 1px solid #ededed;
+}
+.my-account-wrapper .tabs-wrapper .tab {
+  cursor: pointer;
+}
+.my-account-wrapper .tabs-wrapper .tab.active {
+  color: #2ea8db;
+  border-bottom: 2px solid #2ea8db;
+  padding-bottom: 10px;
+}
+.my-account-wrapper .tabs-wrapper .tab h6 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.my-account-wrapper .tab-content {
+  padding: 40px;
+}
+.my-account-wrapper .tab-content .edit-profile {
+  width: 100%;
+}
+.my-account-wrapper .tab-content .edit-profile .form-wrapper {
+  width: 60%;
+}
+.my-account-wrapper .tab-content .edit-profile .img-upload-wrapper {
+  width: 40%;
+}
+.form-group > div {
+  width: 100%;
+}

@@ -1,0 +1,125 @@
+.dashboard-nav {
+  display: flex;
+  justify-content: space-between;
+  background: #fdfdfd;
+  box-shadow: 0px 4px 10px 1px rgba(213, 214, 236, 0.3);
+  padding: 9px 26px 9px 54px;
+}
+.dashboard-nav .logo {
+  cursor: pointer;
+}
+
+.dashboard-nav .right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-nav .right-nav > svg,
+.dashboard-nav .right-nav img,
+.dashboard-nav .right-nav .dropdown >p {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.dashboard-nav .right-nav .dropdown {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.dashboard-nav .right-nav .dropdown .option p{
+  cursor: pointer;
+}
+
+.dashboard-nav .right-nav .dropdown .dropdown-options {
+  display: none;
+}
+.dashboard-nav .right-nav .dropdown .dropdown-options {
+  position: absolute;
+  width: 220px;
+  top: 73px;
+  z-index: 100;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0px 6px 34px 0.2px rgba(215, 219, 222, 0.4);
+  border-radius: 10px;
+}
+
+/* .dashboard-nav .right-nav .dropdown:hover .dropdown-options {
+  display: block;
+} */
+
+.dashboard-nav .right-nav .dropdown > p {
+  display: flex;
+  opacity: 0.5;
+}
+
+.dashboard-nav .right-nav .dropdown > p span {
+  margin-left: 10px;
+}
+
+.dashboard-nav .right-nav .dropdown .dropdown-options::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  position: absolute;
+  top: -22px;
+  right: 25px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.dashboard-nav .right-nav .dropdown .dropdown-options .option {
+  padding: 22px 20px;
+}
+
+.dashboard-nav .right-nav .dropdown .dropdown-options p {
+  display: flex;
+  align-items: center;
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  margin-top: 29px;
+}
+
+.dashboard-nav .right-nav .dropdown .dropdown-options p span {
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+.dashboard-nav .right-nav .dropdown .dropdown-options p.check-admin {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #231f20;
+  margin-top: 0;
+}
+
+/* responsive for 1200px tp 1599px  */
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .dashboard-nav .logo img {
+    max-width: 110px;
+    width: 100%;
+  }
+  .dashboard-nav .right-nav > svg {
+    width: 18px;
+  }
+  .dashboard-nav .right-nav img {
+    width: 45px;
+  }
+  .dashboard-nav .right-nav .dropdown {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .dashboard-nav .right-nav .dropdown .dropdown-options {
+    top: 67px;
+  }
+}
