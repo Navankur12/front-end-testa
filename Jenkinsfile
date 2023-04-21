@@ -11,4 +11,3 @@ stages {
     steps {
       sh 'npm start'
     }
-  }
